@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+
+.box {
+    height: 125vh;
+    width: 100vw;
+    background-image: url(https://s3.amazonaws.com/gameartpartnersimagehost/wp-content/uploads/2020/08/Forest.jpg);
+    rotate: 0deg;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+
+}
+
+
+.hero {
+    height: 120px;
+    width: 120px;
+    background-clip: border-box;
+
+    position: relative;
+    left: 20%;
+    top: 54.4%;
+    bottom: 0%;
+
+
+}
+
+.wilurn {
+
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 110px;
+    width: 110px;
+    top: 58.2%;
+    left: 69%;
+    position: absolute;
+
+}
+
+img {
+    height: 120px;
+    width: 120px;
+}
+
+.w1 {
+    display: flex;
+    margin: 0;
+    animation-name: move;
+    animation-duration: 6.0s;
+    animation-timing-function: ease-in-out linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes move {
+    0% {
+        left: 100%;
+        rotate: (0deg);
+
+    }
+
+
+
+
+    100% {
+        rotate: (360deg);
+        left: -10%;
+    }
+
+
+}
+
+.mover {
+    animation-name: k;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out linear;
+
+}
+
+@keyframes k {
+
+    0% {}
+
+    40% {
+        top: 24%;
+    }
+
+    90% {
+        top: 56.4%;
+    }
+}
+
+#score {
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 0px;
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    margin: 10px;
+    height: 45px;
+    padding-top: 10px;
+    width: 140px;
+    color: rgb(237, 237, 237);
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+
+
+}
+
+.gameover {
+    font-size: 30px;
+    font-weight: 800;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+
+}
+#up{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 29%;
+    position: relative;
+    left: 8%;
+    font-size: 26px;
+    color: aliceblue;
+    background-color: rgb(63, 63, 193);
+}
+#left{
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    color: aliceblue;
+    right: -72%;
+    top: 30%;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgb(63, 63, 193);
+}
+#right{
+    height: 60px;
+    right: -75%;
+    top: 30%;
+    font-size: 30px;
+    color: aliceblue;
+    position: relative;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(63, 63, 193);
+}
+#left:hover,#right:hover,#up:hover{
+    
+    box-shadow: 10px -10px 30px rgb(0, 0, 0);
+    background-color: rgb(21, 21, 231);
+}
